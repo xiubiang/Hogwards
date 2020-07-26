@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | Hexo</title>
+  <title>搭建Hexo博客及上线记录 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -157,87 +157,118 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/07/26/photo/">photo</a></h4>
-                            
-                            <p><time datetime="2020-07-26T12:10:11.000Z"><a href="/2020/07/26/photo/">2020-07-26</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/07/26/搭建Hexo博客及上线记录/">搭建Hexo博客及上线记录</a></h4>
-                            
-                            <p><time datetime="2020-07-26T09:34:00.000Z"><a href="/2020/07/26/搭建Hexo博客及上线记录/">2020-07-26</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2020/07/25/hello-world/">Hello World</a></h4>
-                            
-                            <p><time datetime="2020-07-25T15:21:26.434Z"><a href="/2020/07/25/hello-world/">2020-07-25</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2020-07-26T09:34:00.000Z" itemprop="datePublished">
+          2020-07-26
+      </time>
+    
+    
+    | 
+    <a href='/tags/Hexo/'>Hexo</a>
+    
+    
+</span>
+                <h1>搭建Hexo博客及上线记录</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h4 id="记录搭建Hexo博客流程"><a href="#记录搭建Hexo博客流程" class="headerlink" title="记录搭建Hexo博客流程"></a>记录搭建Hexo博客流程</h4><blockquote>
+<p>人在做决定的时候 需要很长的时间 反复和自己争辩 认定自己百分百是对的 但多数时候人是不经过大脑的 只是内心有个声音 你这么做是对的 所以我在    </p>
+</blockquote>
+<p>搭建Hexo博客需要确认四类: Hexo的node包，node环境，git工具，github账号；</p>
+<h4 id="ready："><a href="#ready：" class="headerlink" title="ready："></a>ready：</h4><p>1.下载node包：<br>    <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载地址</a> _下载稳定版即可</p>
+<p>2.申请github账号：<br>    此处不详细介绍过程 </p>
+<p>3.下载git工具:<br>    因为被墙，需要通过F12找到对应链接,并使用IDM或者迅雷第三方下载工具下载<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a><br>    <img src="git.png" alt="git下载"></p>
+<p>4.下载hexo：<br>    <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a> 或npm install -g hexo-cli<br>  ps:下载前谨记配置git的SSH，不然会下载失败</p>
+<h3 id="construct"><a href="#construct" class="headerlink" title="construct:"></a>construct:</h3><p>1.下载您需要喜欢的主题包：<br>    <a href="https://hexo.io/themes/" target="_blank" rel="noopener">下载地址</a></p>
+<p>2.使用主题包：<br>    下载好后放在根目录的themes文件夹中，并把主题名称填写在hexo项目根目录的 _config.yml 的 theme配置属性中<br>   ps:记得在theme的引号后加空格再写主题名称，不用加引号</p>
+<p> 3.新建github的repository，在头像旁的加号处找到 new repository<br>    <img src="repository.jpeg" alt="配置"></p>
+<p> 4.测试一下是否正常：<br>     使用 hexo server 命令，在浏览器中输入 localhost:4000 即可本地查看</p>
+<p> 5.开始上线：</p>
+<p> 运行 npm install hexo-deployer-git –save 命令</p>
+<p> 把之前新建的repository地址先done下来</p>
+<p> 把项目复制进done下来的文件夹中</p>
+<p> 再运行 hexo g d </p>
+<p> 这时去仓库查看是否上传成功，并新建文件CNAME名称的文件，没有文件后缀，内容是你后期需要域名解析的地址，可以先空着，以备后需</p>
+<p> 配置setting选项：<img src="setting.jpeg" alt="setting"></p>
+<p> 6.上线成功：后续上线只需要hexo g d即可重新配置上线</p>
+<p> 7.书写博客：</p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>好尴尬啊，没想好说什么。</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2020/07/26/photo/" style="float: left;">
+        ← photo
+    </a>
+    
+    
+    <a class="pull-right" href="/2020/07/25/hello-world/">
+        Hello World →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
